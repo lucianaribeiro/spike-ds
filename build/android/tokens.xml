@@ -1,0 +1,14 @@
+<item name="button~border~width">1</item>
+<item name="button~border~radius">0.01</item>
+<item name="color~base~gray~light">#FFCCCCCC</item>
+<item name="color~base~gray~medium">#FF999999</item>
+<item name="color~base~gray~dark">#FF111111</item>
+<item name="color~base~red">#FFFF0000</item>
+<item name="color~base~green">#FF00FF00</item>
+<item name="font~small">0.75</item>
+<item name="font~medium">1.5</item>
+<item name="font~large">2</item>
+<item name="font~base">1</item>
+<item name="margin~small">0.15</item>
+<item name="margin~medium">0.25</item>
+<item name="margin~large">0.4</item>
