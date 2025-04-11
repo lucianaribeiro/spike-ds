@@ -1,5 +1,13 @@
 {
-  "source": ["tokens/*.json"],
+  "source": ["tokens/**/*.json"],
+  "preprocessors": ["tokens-studio"],
+  "log": {
+    "verbosity": "verbose",
+    "warnings": "warn",
+    "errors": {
+      "brokenReferences": "console"
+    }
+  },
   "platforms": {
     "web": {
       "transformGroup": "custom/web",

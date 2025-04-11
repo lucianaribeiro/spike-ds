@@ -1,0 +1,450 @@
+{
+  "$themes": [
+    {
+      "id": "light",
+      "name": "Light",
+      "selectedTokenSets": {
+        "base": "source",
+        "light": "enabled"
+      }
+    }
+  ],
+  "$metadata": {
+    "tokenSetOrder": ["base", "light"]
+  },
+  "color": {
+    "bg": {
+      "neutral": {
+        "secondary": {
+          "value": "{color.purple.10}",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{color.purple.90}",
+          "type": "color"
+        },
+        "default": {
+          "value": "{color.purple.70}",
+          "type": "color",
+          "description": "Cor principal de fundo"
+        }
+      },
+      "primary": {
+        "clear": {
+          "value": "{color.neutral.0}",
+          "type": "color"
+        },
+        "weak": {
+          "value": "{color.neutral.10}",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "value": "{color.black.4}",
+        "type": "color"
+      },
+      "tertiary": {
+        "value": "{color.black.16}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.black.8}",
+        "type": "color"
+      },
+      "elevation": {
+        "high contrast": {
+          "value": "{color.neutral.100}",
+          "type": "color"
+        },
+        "low contrast": {
+          "value": "{color.neutral.0}",
+          "type": "color"
+        },
+        "on secondary": {
+          "value": "{color.neutral.0}",
+          "type": "color"
+        }
+      },
+      "brand": {
+        "default": {
+          "value": "{color.brand.40}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.brand.10}",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{color.brand.100}",
+          "type": "color"
+        },
+        "intermediate": {
+          "value": "{color.brand.50}",
+          "type": "color"
+        }
+      },
+      "informative": {
+        "default": {
+          "value": "{color.blue.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.blue.10}",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{color.blue.90}",
+          "type": "color"
+        }
+      },
+      "positive": {
+        "default": {
+          "value": "{color.green.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.green.10}",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{color.green.90}",
+          "type": "color"
+        }
+      },
+      "attention": {
+        "default": {
+          "value": "{color.orange.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.orange.10}",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{color.orange.90}",
+          "type": "color"
+        }
+      },
+      "negative": {
+        "default": {
+          "value": "{color.red.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.red.10}",
+          "type": "color"
+        },
+        "tertiary": {
+          "value": "{color.red.90}",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "neutral": {
+        "default": {
+          "value": "{color.purple.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.purple.30}",
+          "type": "color"
+        }
+      },
+      "default": {
+        "value": "{color.neutral.100}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.black.12}",
+        "type": "color"
+      },
+      "tertiary": {
+        "value": "{color.black.8}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.black.12}",
+        "type": "color"
+      },
+      "on": {
+        "elevated": {
+          "high contrast": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        }
+      },
+      "informative": {
+        "default": {
+          "value": "{color.blue.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.blue.30}",
+          "type": "color"
+        }
+      },
+      "positive": {
+        "default": {
+          "value": "{color.green.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.green.30}",
+          "type": "color"
+        }
+      },
+      "attention": {
+        "default": {
+          "value": "{color.orange.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.orange.30}",
+          "type": "color"
+        }
+      },
+      "negative": {
+        "default": {
+          "value": "{color.red.70}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.red.30}",
+          "type": "color"
+        }
+      },
+      "brand": {
+        "default": {
+          "value": "{color.brand.60}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.brand.20}",
+          "type": "color"
+        }
+      }
+    },
+    "icon": {
+      "neutral": {
+        "value": "{color.purple.70}",
+        "type": "color"
+      },
+      "on": {
+        "neutral": {
+          "secondary": {
+            "value": "{color.purple.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "elevated": {
+          "high contrast": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "brand": {
+          "default": {
+            "value": "{color.neutral.100}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{color.brand.90}",
+            "type": "color"
+          },
+          "tertiary": {
+            "value": "{color.white.48}",
+            "type": "color"
+          }
+        },
+        "informative": {
+          "secondary": {
+            "value": "{color.blue.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "positive": {
+          "secondary": {
+            "value": "{color.green.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "attention": {
+          "secondary": {
+            "value": "{color.orange.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "negative": {
+          "secondary": {
+            "value": "{color.red.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        }
+      },
+      "link": {
+        "value": "{color.neutral.100}",
+        "type": "color"
+      },
+      "default": {
+        "value": "{color.neutral.100}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.black.56}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.black.32}",
+        "type": "color"
+      },
+      "informative": {
+        "value": "{color.blue.70}",
+        "type": "color"
+      },
+      "positive": {
+        "value": "{color.green.70}",
+        "type": "color"
+      },
+      "attention": {
+        "value": "{color.orange.70}",
+        "type": "color"
+      },
+      "negative": {
+        "value": "{color.red.70}",
+        "type": "color"
+      }
+    },
+    "text": {
+      "neutral": {
+        "value": "{color.purple.70}",
+        "type": "color"
+      },
+      "on": {
+        "neutral": {
+          "secondary": {
+            "value": "{color.purple.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "elevated": {
+          "high contrast": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "brand": {
+          "primary": {
+            "value": "{color.neutral.100}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{color.brand.90}",
+            "type": "color"
+          },
+          "tertiary": {
+            "value": "{color.white.48}",
+            "type": "color"
+          }
+        },
+        "informative": {
+          "secondary": {
+            "value": "{color.blue.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "positive": {
+          "secondary": {
+            "value": "{color.green.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "attention": {
+          "secondary": {
+            "value": "{color.orange.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        },
+        "negative": {
+          "secondary": {
+            "value": "{color.red.80}",
+            "type": "color"
+          },
+          "default": {
+            "value": "{color.neutral.0}",
+            "type": "color"
+          }
+        }
+      },
+      "link": {
+        "value": "{color.neutral.100}",
+        "type": "color"
+      },
+      "default": {
+        "value": "{color.neutral.100}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.black.56}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.black.32}",
+        "type": "color"
+      },
+      "informative": {
+        "value": "{color.blue.70}",
+        "type": "color"
+      },
+      "positive": {
+        "value": "{color.green.70}",
+        "type": "color"
+      },
+      "attention": {
+        "value": "{color.orange.70}",
+        "type": "color"
+      },
+      "negative": {
+        "value": "{color.red.70}",
+        "type": "color"
+      }
+    }
+  }
+}

@@ -2,6 +2,9 @@ import StyleDictionary from "style-dictionary";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { transforms, transformTypes } from "style-dictionary/enums";
+import { getTransforms, register } from "@tokens-studio/sd-transforms";
+
+register(StyleDictionary);
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const { attributeCti, nameConstant, sizePx, colorCss, timeSeconds } =
@@ -125,6 +128,17 @@ StyleDictionary.registerTransformGroup({
   transforms: ["name/squiggle", "hexRGB/hexARGB"],
 });
 
+/**
+ * In this example, we are combining tokens-studio's transforms for scss with custom ones
+ */
+StyleDictionary.registerTransformGroup({
+  name: "custom/tokens-studio-scss",
+  // default value for platform is scss, specifies which Tokens Studio transforms for which platform to grab
+  transforms: [...getTransforms({ platform: "scss" }), "name/kebab"].filter(
+    (transform) => transform !== "ts/size/px"
+  ),
+});
+
 // REGISTER A CUSTOM FORMAT (to be used for this specific example)
 
 StyleDictionary.registerFormat({
@@ -144,6 +158,7 @@ StyleDictionary.registerFormat({
 const sd = new StyleDictionary(__dirname + "/config.json");
 
 // FINALLY, BUILD ALL THE PLATFORMS
+await sd.cleanAllPlatforms();
 await sd.buildAllPlatforms();
 
 console.log("\n==============================================");
